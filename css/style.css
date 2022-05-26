@@ -74,10 +74,6 @@ h1, h2, h3, h4, h5, h6 {
   overflow-y: auto;
 }
 
-#foto{
-  width: 50%;
-}
-
 #header .profile img {
   margin: 15px auto;
   display: block;
