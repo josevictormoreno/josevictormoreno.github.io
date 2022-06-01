@@ -19,11 +19,22 @@
 }
 
 .name {
-  font-family: Ubuntu, sans-serif;
+  font-family: "Oswald", sans-serif;
   color: white;
-  font-size: 30pt;
+  font-size: 60pt;
+  transform: skewY(-12deg);
+  padding-top: 2rem;
 }
 
-.game-div .name{
+.i-am {
+  font-family: "Oswald", sans-serif;
+  color: white;
+  font-size: 40pt;
+  transform: skewY(-12deg);
+  letter-spacing: 0.6rem;
+  padding: 0;
+}
+
+.game-div .name, .i-am{
   text-align: center;
 }
