@@ -1,4 +1,7 @@
-# josevictormoreno.github.io
-Portifólio/ Currículo com github pages
+# José Victor's Resume
+Portfolio/Resume with pages. This project was created with HTML, Css and JavaScript!
 
-Open the index.html file 😁
+Access the link 😁
+```
+https://josevictormoreno.github.io/
+```
