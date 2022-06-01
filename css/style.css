@@ -5,5 +5,25 @@
 }
 
 .game-div {
-  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  background-color: #0a53be;
+}
+
+.eu-correndo {
+  position: absolute;
+  width: 16.5%;
+  bottom: 0;
+}
+
+.name {
+  font-family: Ubuntu, sans-serif;
+  color: white;
+  font-size: 30pt;
+}
+
+.game-div .name{
+  text-align: center;
 }
