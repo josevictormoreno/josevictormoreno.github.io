@@ -4,19 +4,47 @@
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Oswald", sans-serif;
+  background: #434750;
+}
+
+/* *****************
+  *       DIVS    
+******************/
+
 .game-div {
+  display: inline-block;
+  width: 100%;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
   height: 100vh;
-  background-color: #0a53be;
 }
+
+.menu-div {
+  position: relative;
+  display: inline-block;
+  padding: 7.5rem;
+}
+
+/* *****************
+  *       BONECO   
+******************/
 
 .eu-correndo {
   position: absolute;
   width: 16.5%;
   bottom: 0;
 }
+
+/* *****************
+  *       PRINCIPAL   
+******************/
 
 .name {
   font-family: "Oswald", sans-serif;
@@ -35,6 +63,78 @@
   padding: 0;
 }
 
-.game-div .name, .i-am{
+.game-div .name,
+.i-am {
   text-align: center;
+}
+
+/* *****************
+  *       MENU    
+******************/
+
+ul {
+  position: relative;
+  transform: skewY(-15deg);
+}
+
+ul li {
+  position: relative;
+  list-style: none;
+  width: 200px;
+  background: #3e3f46;
+  padding: 15px;
+  z-index: var(--i);
+  transition: 0.5s;
+}
+
+ul li::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -40px;
+  width: 40px;
+  height: 100%;
+  background: #2e3133;
+  transform-origin: right;
+  transform: skewY(45deg);
+  transition: 0.5s;
+}
+
+ul li:hover::before {
+  background-color:#1f5378 ;
+}
+
+ul li:hover::after{
+  background-color:#2982b9 ;
+}
+
+ul li::after {
+  content: '';
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: #35383e;
+  transform-origin: bottom;
+  transform: skewx(45deg);
+  transition: 0.5s;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #999;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.5s;
+}
+
+ul li:hover {
+  background: #33a3ee;
+  transform: translateX(-50px);
+}
+
+ul li:hover a {
+  transition: 0.5s;
+  color: white;
 }
