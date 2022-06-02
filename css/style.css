@@ -6,7 +6,7 @@
 
 body {
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   align-items: center;
   min-height: 100vh;
   font-family: "Oswald", sans-serif;
@@ -50,7 +50,6 @@ body {
   font-family: "Oswald", sans-serif;
   color: white;
   font-size: 60pt;
-  transform: skewY(-12deg);
   padding-top: 2rem;
 }
 
@@ -58,9 +57,15 @@ body {
   font-family: "Oswald", sans-serif;
   color: white;
   font-size: 40pt;
-  transform: skewY(-12deg);
   letter-spacing: 0.6rem;
   padding: 0;
+}
+
+.computer {
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .game-div .name,
@@ -101,11 +106,11 @@ ul li::before {
 }
 
 ul li:hover::before {
-  background-color:#1f5378 ;
+  background-color: #1f5378;
 }
 
-ul li:hover::after{
-  background-color:#2982b9 ;
+ul li:hover::after {
+  background-color: #2982b9;
 }
 
 ul li::after {
@@ -137,4 +142,40 @@ ul li:hover {
 ul li:hover a {
   transition: 0.5s;
   color: white;
+}
+
+/* TYPED EFFECT */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container p {
+  font-size: 3rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+.container p span.typed-text {
+  font-weight: normal;
+  color: white;
+}
+.container p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.container p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
 }
